@@ -1,0 +1,38 @@
+.mat-toolbar {
+    background-color: #A68572;
+    color: #565859;
+  }
+  
+  .container {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../../../assets/lecturasfondo.jpg');
+    display: flex;
+    height: calc(100vh - 64px); /* Resta el alto de la barra de herramientas */
+  }
+  
+  .full-height-sidenav {
+    height: 100%;
+  }
+  
+  .full-height-content {
+    flex: 1;
+    overflow-y: auto; /* Agrega un desplazamiento vertical si es necesario */
+  }
+  
+  .full-height-nav-list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    background-color: #8198A6;
+    color: #D9BC9A;
+  }
+ 
+  .reading-card{
+    background-color: #D9B7B0;
+  }

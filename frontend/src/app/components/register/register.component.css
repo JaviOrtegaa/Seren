@@ -1,0 +1,65 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Roboto, sans-serif; /* Importa la fuente Roboto de Angular Material */
+  }
+  
+  .register-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('../../../assets/calm.gif');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .content {
+    max-width: auto;
+    padding: 40px;
+    /*background-color: #ffffff;*/
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    text-align: center;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  input[type="email"],
+  input[type="text"],
+  input[type="password"] {
+    color:blue;
+    border-radius: 4px;
+    margin-bottom: 4px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="email"]:focus,
+  input[type="text"]:focus,
+  input[type="password"]:focus {
+    border-color: #0468BF;
+  }
+  
+  button {
+    padding: 12px 24px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 80%;
+    cursor: pointer;
+    transition: backgroun
+  }
+  
+  .createim{
+    width: 200px;
+      height: auto;
+  }

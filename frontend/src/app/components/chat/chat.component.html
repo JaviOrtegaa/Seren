@@ -1,0 +1,43 @@
+<mat-toolbar color="primary" class="mat-toolbar">
+  <button mat-icon-button (click)="toggleMenu()" style="margin-left: 0;">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Chat</span>
+</mat-toolbar>
+
+<mat-sidenav-container class="container">
+  <mat-sidenav #sidenav mode="side" [opened]="isMenuOpen" class="full-height-sidenav">
+    <!-- Contenido del menú -->
+    <mat-nav-list class="full-height-nav-list">
+      <mat-list-item (click)="selectOption('Chat')">Chat</mat-list-item>
+      <mat-list-item (click)="selectOption('Lecturas')">Lecturas</mat-list-item>
+      <mat-list-item (click)="selectOption('Ejercicios')">Ejercicios</mat-list-item>
+      <mat-list-item (click)="selectOption('Eliminar cuenta')">Eliminar cuenta</mat-list-item>
+      <mat-list-item (click)="logout()">Cerrar sesión</mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content class="full-height-content">
+    <div class="chat-container">
+      <div class="chat-messages">
+        <!-- Mostrar mensajes y respuestas dinámicamente -->
+        <div *ngFor="let message of messages" class="chat-message" [class.received]="message.from === 'ChatGPT'">
+          <div class="chat-message-text">
+            {{ message.text }}
+          </div>
+          <div class="chat-message-timestamp">
+            {{ message.timestamp }}
+          </div>
+        </div>
+      </div>
+      <div class="chat-input">
+        <div class="input-container">
+          <input type="text" placeholder="Escribe un mensaje..." [(ngModel)]="userInput">
+          <button mat-icon-button class="send-button" (click)="sendMessage()">
+            <mat-icon>send</mat-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

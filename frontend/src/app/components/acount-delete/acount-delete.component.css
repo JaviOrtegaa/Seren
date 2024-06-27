@@ -1,0 +1,38 @@
+/* Asegúrate de que el contenedor ocupe toda la pantalla */
+.register-screen {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+      width: 100vw;
+     background-image: url('../../../assets/calm.gif');
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0; /* Puedes cambiar el color de fondo si lo deseas */
+      margin: 0;
+    }
+    
+    /* Centra el contenido dentro del contenedor */
+    .delete-container {
+      flex-direction: column;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-size: cover;
+      
+      background-position: center;
+      text-align: center;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Opcional: Estilos adicionales para la imagen */
+    .createim {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }

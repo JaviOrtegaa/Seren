@@ -1,0 +1,42 @@
+<mat-toolbar color="primary" class="mat-toolbar">
+  <button mat-icon-button (click)="toggleMenu()" style="margin-left: 0;">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Eliminar cuenta</span>
+</mat-toolbar>
+
+<mat-sidenav-container class="container">
+  <mat-sidenav #sidenav mode="side" [opened]="isMenuOpen" class="full-height-sidenav">
+    <mat-nav-list class="full-height-nav-list">
+      <mat-list-item (click)="selectOption('Chat')">Chat</mat-list-item>
+      <mat-list-item (click)="selectOption('Lecturas')">Lecturas</mat-list-item>
+      <mat-list-item (click)="selectOption('Ejercicios')">Ejercicios</mat-list-item>
+      <mat-list-item (click)="selectOption('Eliminar cuenta')">Eliminar cuenta</mat-list-item>
+      <mat-list-item (click)="logout()">Cerrar sesión</mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <div class="fondo">
+    <div class="delete-container">
+      <div class="welcome-text">
+        <p><strong>Coloca tus datos para eliminar la cuenta</strong></p>
+      </div>
+      <div class="logod-container">
+        <img src="../../../assets/delete.png" alt="logod" class="logod">
+      </div>
+      <div class="input-group">
+        <mat-form-field appearance="fill">
+          <mat-label>Ingrese su usuario</mat-label>
+          <input matInput type="text" [(ngModel)]="username" name="username">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Ingrese su contraseña</mat-label>
+          <input matInput type="password" [(ngModel)]="password" name="password">
+        </mat-form-field>
+      </div>
+      <button mat-raised-button color="primary" (click)="deleteAccount()">Eliminar</button>
+      <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+    </div>
+  </div>
+</mat-sidenav-container>
+

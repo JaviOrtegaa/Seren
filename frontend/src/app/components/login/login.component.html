@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Login Page</title>
+  <link rel="stylesheet" href="login.component.css">
+</head>
+
+<div class="main-container">
+  <div class="containeru">
+    <img src="../../../assets/logo.png" alt="logo" class="logo" />
+    <h1>"Un abrazo de tranquilidad"</h1>
+  </div>
+  <div class="containerd">
+    <h1>Bienvenido</h1>
+    <img src="../../../assets/roboto.png" alt="logod" class="logod" />
+    <mat-form-field appearance="fill">
+      <mat-label>Ingrese su usuario</mat-label>
+      <input matInput type="text" [(ngModel)]="username" name="username">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Ingrese su contraseña</mat-label>
+      <input matInput type="password" [(ngModel)]="password" name="password">
+    </mat-form-field>
+    <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+    <button mat-raised-button color="primary" (click)="login()">Ingresar</button>
+    <div class="recovery-text">
+      <a routerLink="/register">| Registrate </a><a routerLink="/recovery-password">|</a>
+    </div>
+  </div>
+</div>
+
+</html>

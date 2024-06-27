@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+body {
+    background-image: url('../../../assets/calm.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Importa la fuente Roboto de Google Fonts */
+}
+
+.register-successful-container {
+    /*background-color: #ffffff;*/
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
+    max-width: 400px; /* Limita el ancho del contenedor */
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+.register-successful-container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* Agrega un espacio entre la imagen y el botón */
+}
+
+h2{
+    color: #0D0D26;
+}
+

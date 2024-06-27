@@ -1,0 +1,68 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100vh;
+  width: auto;
+  background-image: url('../../../assets/calm.gif');
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+
+.main-container {
+  margin-top: 60px;
+  color: #0D0D26;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  width: auto;
+  border-radius: 20px;
+  padding: auto; /* Agregamos un espacio alrededor del contenido */
+}
+
+.containeru, .containerd {
+  color: #0D0D26;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin: 10px; /* Agregamos un margen entre los contenedores */
+  text-align: center;
+}
+
+h1{
+  margin-top: 15px;
+  font-size: xx-large;
+  color: #0D0D26;
+}
+
+.recovery-text{
+  flex-direction: row;
+}
+
+.logo{
+  align-self: center;
+  width: 350px;
+}
+.logod{
+  width: 250px;
+}
+
+button{
+  margin-bottom: 5px;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+  

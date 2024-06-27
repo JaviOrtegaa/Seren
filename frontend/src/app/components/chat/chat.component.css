@@ -1,0 +1,90 @@
+.mat-toolbar {
+    background-color: #A68572;
+    color: #565859;
+  }
+  
+  .container {
+    display: flex;
+    height: calc(100vh - 64px); /* Resta el alto de la barra de herramientas */
+  }
+  
+  .full-height-sidenav {
+    height: 100%;
+  }
+  
+  .full-height-content {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+      width: 100vw;
+     background-image: url('../../../assets/fondolila.png');
+    flex: 1;
+    overflow-y: auto; /* Agrega un desplazamiento vertical si es necesario */
+  }
+  
+  .full-height-nav-list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    background-color: #8198A6;
+    color: #D9BC9A;
+  }
+  
+  .chat-container {
+    display: flex;
+    margin-left: 10px;
+    flex-direction: column;
+    height: 700px;
+  }
+  
+  .chat-messages {
+    overflow-y: auto;
+    flex: 1;
+  }
+  
+  .chat-input {
+      background-color: ;
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .input-container {
+    position: relative;
+  }
+  
+  input[type="text"]::placeholder {
+      color: #D9B7B0;
+    }
+  
+  input[type="text"] {
+      color: white;
+      background-color: #565859;
+      font-size: 18px;
+      border-radius: 20px;
+      text-align: justify;
+      padding-right: 0px;
+      width: 1000px;
+      line-height: 24px;
+  }
+  
+  .send-button {
+    position: absolute;
+    align-self: right;
+    right: 10px; /* Ajusta la posición del botón de enviar */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #D9B7B0; /* Color del icono */
+  }
+  
+  .chat-message-text {
+    color: black; /* Color del texto del mensaje */
+  }
+  
+  .chat-message-timestamp {
+    color: #666666; /* Color del timestamp del mensaje */
+  }

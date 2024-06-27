@@ -1,0 +1,76 @@
+.input-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para los campos de entrada de Material Design */
+  .mat-form-field {
+    width: 100%;
+  }
+  
+  .mat-input-element {
+    background-color: #2EF2F2;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .fondo{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../../../assets/calm.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  
+  .full-height-nav-list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    background-color: #8198A6;
+    color: #D9BC9A;
+  }
+  
+  .delete-container {
+    text-align: ;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    height: 500px;
+    width: 300px;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: translucid;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .welcome-text,
+  .logod-container,
+  .input-group {
+    margin: 10px 0;
+  }
+  
+  .logod {
+    max-width: 100px; /* Ajusta el tamaño de la imagen si es necesario */
+  }
+  
+  .container{
+    background-color: #011C40;
+  }
+  
+  .mat-toolbar{
+    background-color: #A68572;
+    color: #565859;
+  }
